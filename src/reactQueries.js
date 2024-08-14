@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import { useQueries } from '@tanstack/react-query'
 
-  const key = import.meta.env.VITE_APP_TMDB_KEY
+  const key = "083911d262be898a268e518a137a87fa"
 
   const trendingData = async () => {
     const data = await fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${key}`)

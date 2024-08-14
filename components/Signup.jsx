@@ -70,7 +70,7 @@ function Signup() {
             <input onChange={e => setPassword(e.target.value)} id="password" type="password" placeholder="password"/>
             
             <label htmlFor="password">Confirm Password</label>
-            <input onChange={e => setPassword2(e.target.value)} id="password" type="password" placeholder="password"/>
+            <input onChange={e => setPassword2(e.target.value)} id="cpassword" type="password" placeholder="password"/>
 
             {
               spinner ?
