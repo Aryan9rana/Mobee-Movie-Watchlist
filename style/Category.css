@@ -1,0 +1,160 @@
+:root {
+    --primaryColor: #12130C;
+    --secondaryColor: #CCFF00;
+    --fontColor: #fff;
+    --grey: #1e1e1e;
+    --fontColorFaded: #42443C;
+  }
+
+.genre {
+    width: 100%;
+    position: relative;
+    height: 32em;
+}
+
+.genrecontainer {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.genrecontainer h1 {
+    font-size: 1.5rem;
+    color: var(--fontColorFaded);
+}
+
+.genrecontainer p, h2 {
+    color: var(--fontColor);
+    margin: 0;
+}
+
+.genrecontainer p {
+    font-size: 0.7rem;
+    color: var(--secondaryColor);
+}
+
+.genrecontainer h2 {
+    font-size: 1rem;
+    padding: .3em 0;
+    height: 3em;
+}
+
+.genrecontainer h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.genresection {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    padding-left: .5em;
+    height: 100%;
+}
+
+#toRight, #toLeft {
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    top: 40%;
+}
+
+#toRight {
+    right: 0;
+}
+
+#toLeft {
+    left: 0;
+}
+
+.select {
+    color: var(--fontColorFaded);
+    font-size: 1.2rem;
+    padding: 1em;
+    cursor: pointer;
+    width: fit-content;
+    font-weight: 600;
+}
+
+.select svg {
+    margin-left: .4em;
+    margin-bottom: .1em;
+}
+
+.options {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    height: auto;
+    width: 200px;
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+    border: 1px solid var(--grey);
+}
+
+.options p {
+    cursor: pointer;
+    color: var(--fontColor);
+    font-size: 0.9rem;
+    padding: 1em;
+    border-bottom: 1px solid var(--grey);
+}
+
+.options p:hover {
+    background-color: var(--grey);
+}
+
+.options p:hover:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.options p:hover:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.options p:last-child {
+    border-bottom: none;
+}
+
+.genresection::-webkit-scrollbar {
+    display: none; /*Chrome*/
+  }
+  
+.genresection {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+@media screen and (max-width: 1000px) {
+    .genresection {
+        padding: 0 2em;
+    }
+
+    .genrecontainer {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .genrecontainer h1 {
+        color: var(--fontColorFaded);
+        padding: 0 1em;
+    }
+
+    .select {
+        margin-left: 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    #toRight {
+        right: 2%;
+    }
+    
+    #toLeft {
+        left: 2%;
+    }
+    
+}

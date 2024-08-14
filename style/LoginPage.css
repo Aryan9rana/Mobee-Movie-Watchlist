@@ -1,0 +1,39 @@
+.loginpage {
+    position: relative;
+    margin: auto;
+    max-width: 400px;
+    width: 100%;
+    height: calc(100vh - 54px);
+}
+
+.loginpagecontainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+    background-color: #2b2b2b;
+    padding: 2.5em;
+    border-radius: 10px;
+}
+
+.loginpagecontainer input {
+    margin: .5em 0;
+}
+
+.loginpagecontainer span {
+    color: var(--fontColor);
+    cursor: pointer;
+    margin-left: 0.5em;
+}
+
+.loginpagecontainer p:last-child {
+    color: var(--fontColorFaded);
+    text-align: center;
+}
+
+.error {
+    text-align: center;
+    color: red;
+}

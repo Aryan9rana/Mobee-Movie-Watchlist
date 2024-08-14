@@ -1,0 +1,49 @@
+.trending {
+    width: 100%;
+    position: relative;
+    height: 32em;
+}
+
+.trendingcontainer {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.trendingcontainer h1 {
+    color: var(--fontColorFaded);
+}
+
+.trendingsection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: scroll;
+    padding-left: .5em;
+}
+
+.trendingsection::-webkit-scrollbar {
+    display: none; /*Chrome*/
+}
+  
+.trendingsection {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+@media screen and (max-width: 1000px) {
+    .trendingsection {
+        padding: 0 2em;
+    }
+
+    .trendingcontainer {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .trendingcontainer h1 {
+        color: var(--fontColorFaded);
+        padding: 0 1em;
+    }
+}

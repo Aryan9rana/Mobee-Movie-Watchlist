@@ -1,0 +1,112 @@
+.movie {
+    max-width: 185px;
+    width: 100%;
+    position: relative;
+    height: auto;
+    margin: 1em 0;
+}
+
+.movie img {
+    /* width: 150px;
+    height: 224px; */
+    max-width: 185px;
+    height: 276px;
+    border-radius: 10px;
+    background-color: rgb(22, 20, 20);
+    cursor: pointer;
+}
+
+.movie p, h2 {
+    color: var(--fontColor);
+    margin: 0;
+}
+
+.movie p {
+    font-size: 0.7rem;
+    color: var(--secondaryColor);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.movie h2 {
+    font-size: 1rem;
+    padding: .3em 0;
+    height: 3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    cursor: pointer;
+}
+
+.movie h2:hover {
+    text-decoration: underline;
+}
+
+.movie h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.overlay {
+    cursor: pointer;
+    position: absolute;
+    width: 185px;
+    border-radius: 10px;
+    height: 276px;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.overlay svg {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--secondaryColor);
+    padding: .5em;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.both {
+    display: flex;
+    align-items: center;
+    gap: .6em;
+    padding: .45em 1em;
+    font-size: .8rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0;
+}
+
+#movieAddToWatchlist {
+    background: none;
+    border: 2px solid var(--fontColor);
+    color: var(--fontColor);
+}
+
+#movieAddToWatchlist:hover {
+    background: none;
+    border: 2px solid var(--secondaryColor);
+    color: var(--fontColor);
+}
+
+
+#movieWatchlisted {
+    background-color: var(--secondaryColor);
+    border: 2px solid var(--secondaryColor);
+    color: var(--primaryColor);
+}
