@@ -12,7 +12,7 @@ export default function Discover() {
   const params = useParams()
   const navigate = useNavigate()
 
-  const {data, isLoading, isError} = discoverData(1)
+  const {data, isLoading, isError} = discoverData(params.page < 1 ? 1 : params.page)
 
   const discover = data?.results.map(movie => {
     return <Movie key={movie.id} movie={movie}/>
