@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app"
 import { getFirestore } from "firebase/firestore"
 import { getAuth, signOut } from "firebase/auth"
 
-
+import { getAnalytics } from "firebase/analytics"; 
 const firebaseConfig = {
   apiKey: "AIzaSyAaoXA0qDjkyk7KrHjNR5M_MxMbl1Iax4k",
   authDomain: "movie-watchlist-8c01b.firebaseapp.com",
@@ -16,5 +16,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig)
 const auth = getAuth(app)
 const db = getFirestore(app)
+const analytics = getAnalytics(app);
 
 export {auth, db, signOut}
