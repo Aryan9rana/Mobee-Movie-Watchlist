@@ -77,7 +77,7 @@ export default function Nav() {
         <div className="navcontainer">
             <div className="left">
 
-                <p className="logo"><Link to="/">NMDb</Link></p>
+                <p className="logo"><Link to="/">MOBEE</Link></p>
                 <div className="search" style={{position: isMobile && mobileSearch && "absolute", width: isMobile && mobileSearch && "82%"}}>
                 {
                     !isMobile &&
@@ -153,7 +153,7 @@ export default function Nav() {
             <div className="mobilecontainer">
 
                 <div className="logoSection">
-                    <p onClick={()=>setMobileNavModal(false)} className="logo"><Link to="/">NMDb</Link></p>
+                    <p onClick={()=>setMobileNavModal(false)} className="logo"><Link to="/">MOBEE</Link></p>
                     <svg onClick={()=>setMobileNavModal(false)} className="x" width="54" height="54" viewBox="0 0 54 54" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4 50.3132L27.1566 27.1566M50.3132 4L27.1522 27.1566M27.1522 27.1566L4 4M27.1566 27.1566L50.3132 50.3132" stroke="white" strokeWidth="6.625" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>

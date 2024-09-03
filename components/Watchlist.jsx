@@ -65,7 +65,7 @@ export default function Watchlist() {
                     <p> Sign in to access your Watchlist <br />
                         Save shows and movies to keep track of what you want to watch.
                     </p>
-                    <Link to="/login">Sign in to NMDb</Link>
+                    <Link to="/login">Sign in to MOBEE</Link>
                 </div>
         }
         </div>
